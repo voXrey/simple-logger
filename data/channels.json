@@ -1,0 +1,139 @@
+{
+    
+    "logs-members": {
+        "description": {
+            "en": "Logs members events",
+            "fr": "Log les événements de membres"
+        },
+        "logs": {
+            "en": [
+                "members who join",
+                "members who leave",
+                "roles added to members",
+                "roles removed from members",
+                "nickname changes"
+            ],
+            "fr": [
+                "membres qui rejoignent le serveur",
+                "membres qui quittent le serveur",
+                "rôles ajoutés aux membres",
+                "rôles retirés aux membres",
+                "membres renommés"
+            ]
+        },
+        "unlog": {
+            "en": [
+                "member id",
+                "one member's role id"
+            ],
+            "fr": [
+                "id du membre",
+                "id d'un des rôles du membre"
+            ]
+        }
+    },
+    "logs-server": {
+        "description": {
+            "en": "Logs server's events",
+            "fr": "Log les événements du serveur"
+        },
+        "logs": {
+            "en": [
+                "channels created",
+                "channels deleted",
+                "channels updated",
+                "roles created",
+                "roles deleted"
+            ],
+            "fr": [
+                "salons créés",
+                "salons supprimés",
+                "salons modifiés",
+                "rôles créés",
+                "rôles supprimés"
+            ]
+        },
+        "unlog": {
+            "en": [
+                "member id",
+                "one user's role id",
+                "channel id",
+                "role id"
+            ],
+            "fr": [
+                "id du membre",
+                "id d'un des rôles du membre",
+                "id du salon",
+                "id du rôle"
+            ]
+        }
+    },
+    "logs-messages": {
+        "description": {
+            "en": "Logs messages events",
+            "fr": "Log les événements de messages"
+        },
+        "logs": {
+            "en": [
+                "messages edited",
+                "messages deleted"
+            ],
+            "fr": [
+                "messages modifiés",
+                "messages supprimés"
+            ]
+        },
+        "unlog": {
+            "en": [
+                "author id",
+                "one author's role id",
+                "channel id",
+                "category id"
+            ],
+            "fr": [
+                "id de l'auteur",
+                "id d'un des rôles de l'auteur",
+                "id du salon",
+                "id de la catégorie"
+            ]
+        }
+    },
+    "logs-invitations": {
+        "description": {
+            "en": "Logs invitations events",
+            "fr": "Log les événements d'invitations"
+        },
+        "logs": {
+            "en": [
+                "invitations created",
+                "invitations deleted"
+            ],
+            "fr": [
+                "invitations créées",
+                "invitations supprimées"
+            ]
+        },
+        "unlog": {
+            "en": [],
+            "fr": []
+        }
+    },
+    "simple-logger": {
+        "description": {
+            "en": "Send bot's messages like announces",
+            "fr": "Envoie les messages importants pour le bot comme des annonces"
+        },
+        "logs": {
+            "en": [
+                "bot's owner announces"
+            ],
+            "fr": [
+                "annonces du propriétaire du bot"
+            ]
+        },
+        "unlog": {
+            "en": [],
+            "fr": []
+        }
+    }
+}
