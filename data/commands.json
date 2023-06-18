@@ -1,0 +1,349 @@
+{
+    "categories": {
+        "logging": ["setup"],
+        "settings": ["settings", "settings set", "settings reset", "settings help"],
+        "info": ["help", "server"],
+        "others": ["invite"]
+    },
+    "owner-categories": {
+        "spy": ["invites", "create-invite"],
+        "cogs": ["cogs", "cogs load", "cogs unload", "cogs reload"],
+        "bot": ["guilds-message", "guilds"]
+    },
+    "commands": {
+        "help": {
+            "usage": "help",
+            "aliases": [],
+            "description": {
+                "en": "Send the help page or help for a command",
+                "fr": "Envoie la page d'aide ou celle pour une commande"
+            },
+            "arguments": [
+                {
+                    "name": "command",
+                    "description": {
+                        "en": "The command you need help with",
+                        "fr": "La commande dont vous avez besoin d'aide"
+                    },
+                    "required": false
+                }
+            ],
+            "user-permissions": [],
+            "bot-permissions": []
+        },
+        "invite": {
+            "usage": "invite",
+            "aliases": [],
+            "description": {
+                "en": "Send an invite to add the bot on your server",
+                "fr": "Envoie une invitation pour ajouter le bot sur votre serveur"
+            },
+            "arguments": [],
+            "user-permissions": [],
+            "bot-permissions": []
+        },
+        "setup": {
+            "usage": "setup",
+            "aliases": [],
+            "description": {
+                "en": "Setup logs category and logs channels",
+                "fr": "Met en place la catégorie et les salons pour les logs"
+            },
+            "arguments": [
+                {
+                    "name": "category",
+                    "description": {
+                        "en": "An existing category's name or the futur category's name (default to 'logs')",
+                        "fr": "Une catégorie existante le nom de la catégorie qui sera créée ('logs' par défaut)"
+                    },
+                    "required": false
+                }
+            ],
+            "user-permissions": ["administrator"],
+            "bot-permissions": ["manage_channels", "manage_messages"]
+        },
+        "settings": {
+            "usage": "settings",
+            "aliases": [],
+            "description": {
+                "en": "Show all settings",
+                "fr": "Affiche tous les paramètres"
+            },
+            "arguments": [],
+            "user-permissions": ["administrator"],
+            "bot-permissions": []
+        },
+        "settings reset": {
+            "usage": "settings reset",
+            "aliases": [],
+            "description": {
+                "en": "Reset all settings or just one",
+                "fr": "Réinitialise tous les paramètres ou bien juste un seul"
+            },
+            "arguments": [
+                {
+                    "name": "setting",
+                    "description": {
+                        "en": "Setting to reset",
+                        "fr": "Paramètre à réinitialiser"
+                    },
+                    "required": false
+                }
+            ],
+            "user-permissions": ["administrator"],
+            "bot-permissions": []
+        },"settings set": {
+            "usage": "settings set",
+            "aliases": [],
+            "description": {
+                "en": "Set a setting",
+                "fr": "Défini un paramètre"
+            },
+            "arguments": [
+                {
+                    "name": "setting name",
+                    "description": {
+                        "en": "Setting to change",
+                        "fr": "Paramètre à définir"
+                    },
+                    "required": true
+                },
+                {
+                    "name": "new value",
+                    "description": {
+                        "en": "New setting's value",
+                        "fr": "Nouvelle valeur du paramètre"
+                    },
+                    "required": true
+                }
+            ],
+            "user-permissions": ["administrator"],
+            "bot-permissions": []
+        },
+        "settings help": {
+            "usage": "settings help",
+            "aliases": [],
+            "description": {
+                "en": "Show info about a setting",
+                "fr": "Affiche les informations à propos d'un paramètre"
+            },
+            "arguments": [
+                {
+                    "name": "name",
+                    "description": {
+                        "en": "Name of the setting",
+                        "fr": "Nom du paramètre"
+                    },
+                    "required": true
+                }
+            ],
+            "user-permissions": ["administrator"],
+            "bot-permissions": []
+        },
+        "server": {
+            "usage": "server",
+            "aliases": ["guild"],
+            "description": {
+                "en": "Show server's info",
+                "fr": "Affiche les informations d'un serveur"
+            },
+            "arguments": [
+                {
+                    "name": "server",
+                    "description": {
+                        "en": "Server you want info (default to current server)",
+                        "fr": "Le serveur dont vous souhaitez les informations (serveur actuel par défaut)"
+                    },
+                    "required": false
+                }
+            ],
+            "user-permissions": [],
+            "bot-permissions": []
+        },
+        "report": {
+            "usage": "report",
+            "aliases": [],
+            "description": {
+                "en": "Report a bug/error",
+                "fr": "Envoie un rapport de bug/erreur"
+            },
+            "arguments": [],
+            "user-permissions": [],
+            "bot-permissions": []
+        },
+        "suggest": {
+            "usage": "suggest",
+            "aliases": ["suggestion"],
+            "description": {
+                "en": "Make a suggestion to upgrade bot",
+                "fr": "Faire une suggestion pour améliorer le bot"
+            },
+            "arguments": [],
+            "user-permissions": [],
+            "bot-permissions": []
+        }
+    },
+    "owner-commands": {
+        "help-owner": {
+            "usage": "help-owner",
+            "aliases": [],
+            "description": {
+                "en": "Send the owner's help page or help for a owner's command",
+                "fr": "Envoie la page d'aide ou celle pour une commande réservée au propriétaire"
+            },
+            "arguments": [
+                {
+                    "name": "command",
+                    "description": {
+                        "en": "The command you need help with",
+                        "fr": "La commande dont vous avez besoin d'aide"
+                    },
+                    "required": false
+                }
+            ],
+            "user-permissions": [],
+            "bot-permissions": []
+        },
+        "invites": {
+            "usage": "invites",
+            "aliases": [],
+            "description": {
+                "en": "Get all server's invites",
+                "fr": "Récupère toutes les invitations d'un serveur"
+            },
+            "arguments": [
+                {
+                    "name": "server",
+                    "description": {
+                        "en": "The server you want invites from",
+                        "fr": "Le serveur dont vous souhaitez les invitations"
+                    },
+                    "required": true
+                }
+            ],
+            "user-permissions": [],
+            "bot-permissions": ["manage_guild"]
+        },
+        "create-invite": {
+            "usage": "create-invite",
+            "aliases": [],
+            "description": {
+                "en": "Create invite in a server",
+                "fr": "Créer une inviation dans un serveur"
+            },
+            "arguments": [
+                {
+                    "name": "server",
+                    "description": {
+                        "en": "The server you want invite (dont use spaces)",
+                        "fr": "Le serveur où vous souhaitez créer l'invitation"
+                    },
+                    "required": true
+                },
+                {
+                    "name": "infinity",
+                    "description": {
+                        "en": "Create an infinity invitation (expected: Yes/No, True/False, 1/0)",
+                        "fr": "Créer une inviation infinie (attendus : Yes/No, True/False, 1/0)"
+                    },
+                    "required": false
+                }
+            ],
+            "user-permissions": [],
+            "bot-permissions": []
+        },
+        "guilds-message": {
+            "usage": "guilds-message",
+            "aliases": [],
+            "description": {
+                "en": "Send a message to all server that bot joined",
+                "fr": "Envoie un message dans tous les serveurs que le bot a rejoint"
+            },
+            "arguments": [],
+            "user-permissions": [],
+            "bot-permissions": []
+        },
+        "guilds": {
+            "usage": "guilds",
+            "aliases": [],
+            "description": {
+                "en": "See how many guilds bot joined",
+                "fr": "Voir combien de serveurs le bot a rejoint"
+            },
+            "arguments": [],
+            "user-permissions": [],
+            "bot-permissions": []
+        },
+        "cogs": {
+            "usage": "cogs",
+            "aliases": [],
+            "description": {
+                "en": "Send list of cogs loaded and not loaded",
+                "fr": "Envoie la liste des cogs chargés et non chargés"
+            },
+            "arguments": [],
+            "user-permissions": [],
+            "bot-permissions": []
+        },
+        "cogs load": {
+            "usage": "cogs load",
+            "aliases": [],
+            "description": {
+                "en": "Load a cog",
+                "fr": "Charge un cog"
+            },
+            "arguments": [
+                {
+                    "name": "cog name",
+                    "description": {
+                        "en": "Name of the cog you want to load",
+                        "fr": "Nom du cog"
+                    },
+                    "required": true
+                }
+            ],
+            "user-permissions": [],
+            "bot-permissions": []
+        },
+        "cogs unload": {
+            "usage": "cogs unload",
+            "aliases": [],
+            "description": {
+                "en": "Unload a cog",
+                "fr": "Décharge un cog"
+            },
+            "arguments": [
+                {
+                    "name": "cog name",
+                    "description": {
+                        "en": "Name of the cog you want to unload",
+                        "fr": "Nom du cog"
+                    },
+                    "required": true
+                }
+            ],
+            "user-permissions": [],
+            "bot-permissions": []
+        },
+        "cogs reload": {
+            "usage": "cogs reload",
+            "aliases": [],
+            "description": {
+                "en": "Reload a cog",
+                "fr": "Recharge un cog"
+            },
+            "arguments": [
+                {
+                    "name": "cog name",
+                    "description": {
+                        "en": "Name of the cog you want to reload",
+                        "fr": "Nom du cog"
+                    },
+                    "required": true
+                }
+            ],
+            "user-permissions": [],
+            "bot-permissions": []
+        }
+    }
+}

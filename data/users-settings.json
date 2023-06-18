@@ -1,0 +1,29 @@
+{
+    "lang": {
+        "name": "lang",
+        "db-column": "lang",
+        "data-guild-name": "lang",
+        "description": {
+            "en": "Langage used in the server",
+            "fr": "Langage utilisé sur le serveur"
+        },
+        "restricted": true,
+        "values": [
+            "en",
+            "fr"
+        ],
+        "default": "en"
+    },
+    "prefix": {
+        "name": "prefix",
+        "db-column": "prefix",
+        "data-guild-name": "prefix",
+        "description": {
+            "en": "Prefix used to execute commands",
+            "fr": "Préfixe utilisé pour exécuter les commandes"
+        },
+        "restricted": false,
+        "values": [],
+        "default": "."
+    }
+}
